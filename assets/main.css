@@ -8,6 +8,7 @@
 body {
   font-family: "Rubik", sans-serif;
   background-color: hsl(226deg, 43%, 10%);
+  zoom: 90%;
 }
 
 .attribution {
@@ -25,10 +26,11 @@ body {
 }
 .container .user-info {
   position: relative;
-  background-color: hsl(235deg, 45%, 61%);
+  background-color: hsl(246deg, 80%, 60%);
   border-radius: 20px;
   padding: 20px;
   width: 300px;
+  height: 400px;
   z-index: 1;
 }
 .container .user-info .users-img {
@@ -37,7 +39,7 @@ body {
   border-radius: 50%;
 }
 .container .user-info p {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 14px;
   color: hsl(236deg, 100%, 87%);
 }
@@ -45,23 +47,176 @@ body {
   color: #fff;
   font-size: 50px;
   font-weight: 100;
-  margin-bottom: 50px;
+  margin-top: 20px;
 }
 .container .time {
   position: relative;
   background-color: hsl(235deg, 46%, 20%);
   padding: 20px;
   width: 300px;
+  height: 205px;
   margin-top: -10px;
   z-index: 0;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 .container .time .btn {
+  border: none;
+  outline: none;
   display: block;
   color: hsl(236deg, 100%, 87%);
   font-size: 18px;
+  padding-top: 20px;
+  transition: 0.4s;
 }
 .container .time .btn:hover {
   color: #fff;
+}
+.container .event-img {
+  position: relative;
+  height: 75px;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: hsl(15deg, 100%, 70%);
+}
+.container .event-img img {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 65px;
+  height: auto;
+}
+.container .event-img-2 {
+  position: relative;
+  height: 75px;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: hsl(195deg, 74%, 62%);
+}
+.container .event-img-2 img {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 65px;
+  height: auto;
+}
+.container .event-img-3 {
+  position: relative;
+  height: 75px;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: hsl(348deg, 100%, 68%);
+}
+.container .event-img-3 img {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 65px;
+  height: auto;
+}
+.container .event-img-4 {
+  position: relative;
+  height: 75px;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: hsl(145deg, 58%, 55%);
+}
+.container .event-img-4 img {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 65px;
+  height: auto;
+}
+.container .event-img-5 {
+  position: relative;
+  height: 75px;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: hsl(264deg, 64%, 52%);
+}
+.container .event-img-5 img {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 65px;
+  height: auto;
+}
+.container .event-img-6 {
+  position: relative;
+  height: 75px;
+  border-radius: 20px;
+  z-index: 0;
+  background-color: hsl(43deg, 84%, 65%);
+}
+.container .event-img-6 img {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 65px;
+  height: auto;
+}
+.container .event-desc {
+  position: relative;
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 40px;
+  color: #fff;
+  z-index: 1;
+  margin-top: -40px;
+  transition: 0.4s;
+}
+.container .event-desc .title {
+  font-size: 25px;
+}
+.container .event-desc .hour {
+  font-size: 65px;
+  font-weight: 100;
+}
+.container .event-desc .last-hour {
+  color: hsl(236deg, 100%, 87%);
+}
+.container .event-desc .dot {
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  padding: 10px;
+  font-weight: 700;
+  color: hsl(236deg, 100%, 87%);
+}
+.container .event-desc:hover {
+  background-color: hsl(235deg, 45%, 61%);
+}
+.container .event-desc:hover .dot {
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .user-info {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .time {
+    display: flex !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+  .time .btn-div {
+    display: flex !important;
+    margin: auto;
+  }
+  .col-lg-4 {
+    margin-top: 10px !important;
+  }
+  .col-lg-4 .hour-div {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .col-lg-4 .hour-div .last-hour {
+    display: flex !important;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
